@@ -52,3 +52,23 @@ INSERT INTO customers (full_name, email, phone) VALUES
 ('Hoang Thi D', 'd@gmail.com', '0900000004'),
 ('Nguyen Van E', 'e@gmail.com', '0900000005');
 
+SELECT *
+FROM books
+WHERE category = 'Trinh thám'
+  AND price < 100000;
+
+SELECT *
+FROM customers
+WHERE email LIKE '%@gmail.com';
+
+SELECT *
+FROM books
+ORDER BY price DESC
+LIMIT 3;
+
+UPDATE books
+SET price = price * 0.9
+WHERE publish_year < 2020;
+
+
+
